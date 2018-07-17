@@ -1,10 +1,13 @@
 #include "Enemy.h"
 #include <time.h>
 int main() {
+	//Random Seed
 	srand(clock());
+	//Initialize the number of enemies, how much health the player has, and how much damage the player can do to the enemies
 	int enemyNum = 10;
 	int p_health = 100;
 	int p_damage = 5;
+	//Creating a pointer 'enemies'
 	Enemy ** enemies = new Enemy *[enemyNum];
 	for (int i = 0; i < enemyNum; ++i) {
 		enemies[i] = new Enemy((rand() % 20) + 5, (rand() % 5) + 1);
