@@ -4,7 +4,7 @@ int main() {
 	//Random Seed 
 	srand(time(NULL)); //clock() needs #include <time.h>
 	//Initialize the number of enemies, how much health the player has, and how much damage the player can do to the enemies
-	int enemyNum = 10;
+	int enemyNum = 15;
 	int p_health = (rand() % 20) + 90;
 	int p_damage = (rand() % 5) + 3;
 	std::cout << "Player Health: " << p_health << std::endl;
@@ -13,7 +13,7 @@ int main() {
 	Enemy ** enemies = new Enemy *[enemyNum];
 	//Set random values to Health and Damage for the enemies
 	for (int i = 0; i < enemyNum; ++i) {
-		enemies[i] = new Enemy((rand() % 20) + 5, (rand() % 5) + 1);
+		enemies[i] = new Enemy((rand() % 20) + 5, (rand() % 5) + 2);
 	}
 	//Creates a boolean to see if all enemies are still alive, if not break out of the loop and stop
 	bool enemiesAlive = true;
