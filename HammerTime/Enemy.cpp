@@ -5,7 +5,7 @@ Enemy::Enemy(int h, int d) {
 	health = h;
 }
 
-bool Enemy::TakeDamage(int d) {
+bool Enemy::takeDamage(int d) {
 	health -= d;
 	if (health > 0) {
 		return true;
