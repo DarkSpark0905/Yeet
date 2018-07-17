@@ -4,7 +4,7 @@ int main() {
 	//Random Seed 
 	srand(time(NULL)); //clock() needs #include <time.h>
 	//Initialize the number of enemies, how much health the player has, and how much damage the player can do to the enemies
-	int enemyNum = 15;
+	int enemyNum = 12;
 	int p_health = (rand() % 20) + 90;
 	int p_damage = (rand() % 5) + 3;
 	std::cout << "Player Health: " << p_health << std::endl;
